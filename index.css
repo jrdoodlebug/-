@@ -261,9 +261,11 @@ TO DO LIST
 
 #todoapp li:hover {
     cursor: none;
-	background-color: rgba(84, 84, 84, 0.548);
+	background-color: rgba(54, 54, 54, 0.548);
 	color:#ffffff;
-
+    transition: 0.2s;
+    /*font-size: 110%;*/
+    letter-spacing: 0.3em;
 }
 
 #todoapp input[type="text"] {
@@ -329,14 +331,14 @@ TO DO LIST
 #todo-list::-webkit-scrollbar-thumb:vertical {
     cursor: none;
     height: 6px;
-    background-color: #666;
+    background-color: rgb(73, 73, 73);
     -webkit-border-radius: 6px;
 }
 
 #todo-list::-webkit-scrollbar-thumb:horizontal {
     cursor: none;
     width: 6px;
-    background-color: #666;
+    background-color: rgb(73, 73, 73);
     -webkit-border-radius: 6px;
 }
 
@@ -346,6 +348,7 @@ TO DO LIST
 	position: relative;
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
+    transition: 0.3s;
 }
 
 #todo-list li:last-child {
@@ -411,22 +414,26 @@ TO DO LIST
 #todo-list li.done label {
     cursor: none;
 	color: #000000;
+    background-color: rgba(70, 70, 70, 0.432);
 	text-decoration: line-through;
+    transition: all .2s linear;
 }
 
 
 
 #todo-list li:hover .destroy {
   	display: block;
+    transition: all .2s linear;
 	
 }
 
 #todo-list .destroy:hover {
     cursor: none;
   background-position: 0 -20px;
-  background-color:#fff;
-  color:#de3f53;
+  background-color:rgb(255, 180, 180);
+  color:#de3f5400;
   font-weight:bold;
+  transition: all .2s linear;
 }
 
 #todo-list li.editing {
@@ -438,6 +445,7 @@ TO DO LIST
 }
 
 #todo-list li.editing:last-child {
+    cursor: none;
 	margin-bottom: -1px;
 }
 
@@ -460,14 +468,17 @@ TO DO LIST
 }
 
 #todo-list li.editing .view {
+    cursor: none;
 	display: none;
 }
 
 #todo-list li .view label {
+    cursor: none;
 	word-break: break-word;
 }
 
 #todo-list li .edit {
+    cursor: none;
 	display: none;
 }
 
@@ -504,7 +515,7 @@ TO DO LIST
 
 	margin-right: 4px;
 	padding: 0 10px 0px;
-	cursor: pointer;
+    cursor: none;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 12px;
 	-ms-border-radius: 12px;
@@ -520,6 +531,7 @@ TO DO LIST
 }
 
 #clear-completed:hover {
+    cursor: none;
 	background: rgb(255, 255, 255);
     color: rgb(56, 56, 56);
     transition: 0.3s;
@@ -531,11 +543,13 @@ TO DO LIST
 }
 
 #clear-completed:active {
+    cursor: none;
 	position: relative;
 	top: 1px;
 }
 
 #todo-count span {
+    cursor: none;
 	font-weight: bold;
 }
 
@@ -544,18 +558,24 @@ TO DO LIST
 height:20px;
 width:300px;
 display:block;
-cursor:pointer;
+cursor: none;
 position:absolute;
 top:40%;
 /*bottom: 50%;*/
 left:3%;
-cursor: none;
 }
 
 
 
 
-.footer {
+/******************************************************************************************
+******************************************************************************************
+FOOTER
+******************************************************************************************
+*******************************************************************************************/
+
+
+.footer, #footer {
     background-color: rgba(68, 68, 68, 0.05);
     color: #a1a1a1;
     text-align: center;
@@ -567,4 +587,3 @@ cursor: none;
     bottom: 0;
     width: 100%;
   }
-  
