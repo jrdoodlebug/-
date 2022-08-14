@@ -555,7 +555,7 @@ cursor: none;
 
 
 
-.footer {
+.footer, #footer {
     background-color: rgba(68, 68, 68, 0.05);
     color: #a1a1a1;
     text-align: center;
@@ -567,4 +567,3 @@ cursor: none;
     bottom: 0;
     width: 100%;
   }
-  
