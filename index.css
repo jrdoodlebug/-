@@ -22,7 +22,7 @@ body,html {
 }
 
 body,html { 
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
     cursor:none;
@@ -551,3 +551,20 @@ top:40%;
 left:3%;
 cursor: none;
 }
+
+
+
+
+.footer {
+    background-color: rgba(68, 68, 68, 0.05);
+    color: #a1a1a1;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
