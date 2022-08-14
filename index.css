@@ -3,7 +3,7 @@
 
 
 
-body,html {
+body,html,iframe {
     font-family: 'Handlee', cursive;
     /*background: #000000;*/
     background: linear-gradient(30deg,#F6C0C0,#F6CCC0,#F6D3C0,#F6DEC0,#F6ECC0,#F5F6C0,#E8F6C0,#D8F6C0,#C8F6C0,#C0F6C9,#C0F6D5,#C0F6E4,#C0F6F0,#C0F1F6,#C0E5F6,#C0DAF6,#C0CEF6,#C1C0F6,#CEC0F8);
@@ -111,7 +111,7 @@ form {
 
 .form-control-search {
     font-family: 'Handlee', cursive;
-    text-decoration: underline;
+    text-decoration: underline dotted;
     background: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
     font-size: 120%;
@@ -348,7 +348,7 @@ TO DO LIST
 	position: relative;
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #todo-list li:last-child {
@@ -526,7 +526,7 @@ TO DO LIST
 	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
 	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
 	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
-    transition: 0.3s;
+    transition: 0.2s;
 
 }
 
@@ -534,7 +534,7 @@ TO DO LIST
     cursor: none;
 	background: rgb(255, 255, 255);
     color: rgb(56, 56, 56);
-    transition: 0.3s;
+    transition: 0.2s;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
 	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
 	-ms-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
@@ -560,7 +560,7 @@ width:300px;
 display:block;
 cursor: none;
 position:absolute;
-top:55%;
+top:45%;
 /*bottom: 50%;*/
 left:3%;
 }
@@ -587,3 +587,37 @@ FOOTER
     bottom: 0;
     width: 100%;
   }
+
+
+
+/******************************************************************************************
+******************************************************************************************
+QUICK LINKS
+******************************************************************************************
+*******************************************************************************************/
+
+
+
+.link_thing {
+    cursor: none;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.4s;
+    letter-spacing: 0.5em;
+    font-size: 195%;
+    color: rgba(163, 163, 163, 0.497);
+    /*line-height: 200%;*/
+}
+
+.link_thing:hover {
+      color: rgba(255, 255, 255, 0.497);
+      cursor: none;
+      transition: 0.4s;
+      font-size: 225%;
+}
+
+.link_thing:active {
+    color: #fff;
+}
+
+
