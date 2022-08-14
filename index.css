@@ -22,7 +22,7 @@ body,html {
 }
 
 body,html { 
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1.8s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
     cursor:none;
