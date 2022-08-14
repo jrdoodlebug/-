@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Itim&display=swap');
+
+
+
+body,html {
+    font-family: 'Handlee', cursive;
+    /*background: #000000;*/
+    background: linear-gradient(30deg,#F6C0C0,#F6CCC0,#F6D3C0,#F6DEC0,#F6ECC0,#F5F6C0,#E8F6C0,#D8F6C0,#C8F6C0,#C0F6C9,#C0F6D5,#C0F6E4,#C0F6F0,#C0F1F6,#C0E5F6,#C0DAF6,#C0CEF6,#C1C0F6,#CEC0F8);
+    /*background: linear-gradient(30deg,#ac8f8f,#ffffff);*/
+    text-align: center;
+    /*
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.AwxCInsUR6ZyAqa7RG6fMQHaE_%26pid%3DApi&f=1");
+        */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    color: #949494;
+    cursor:none;
+    overflow:hidden;
+    padding: 5px;
+}
+
+body,html { 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    cursor:none;
+    overflow:hidden;
+} 
+
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0;
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+article {
+  display: block;
+
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #ffffff;
+  background: rgba(181, 181, 181, 0.6);
+}
+
+::selection {
+  color: #ffffff;
+  background: rgba(181, 181, 181, 0.6);
+}
+
+
+.all {
+    margin-left: 8.5px;
+    margin-right: 8.5px;
+}
+
+
+/******************************************************************************************
+******************************************************************************************
+GOOGLE SEARCH
+******************************************************************************************
+*******************************************************************************************/
+
+form {
+    font-family: 'Handlee', cursive;
+    cursor:none;
+    overflow:hidden;
+}
+
+.button {
+    font-family: 'Handlee', cursive;
+    font-size: 105%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #898989;
+    background-color: rgba(255, 255, 255, 0.537);
+    border: 0px;
+    cursor:none;
+    overflow:hidden;
+    transition: .6s;
+}
+
+.button:hover {
+    transition: .6s;
+    background: rgba(98, 98, 98, 0.4);
+    color: #ffffff;
+    transform: scale(110%)
+  }
+
+.button:hover:not() {
+    transition: .6s;
+    background: rgba(98, 98, 98, 0.4);
+    color: #ffffff;
+  }
+
+.button:active {
+    background: rgba(0, 0, 0, 0.59);
+    color: #fff;
+    transition: .6s;
+    transform: scale(110%)
+}
+
+
+
+.form-control-search {
+    font-family: 'Handlee', cursive;
+    text-decoration: underline;
+    background: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    font-size: 120%;
+    cursor:none;
+    overflow:hidden;
+    color: rgb(172, 172, 172);
+}
+
+
+/******************************************************************************************
+******************************************************************************************
+MOUSE
+******************************************************************************************
+*******************************************************************************************/
+ 
+#cursor{
+    pointer-events: none;
+    
+    height:40px;
+    width:40px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    
+
+    transform:translate(-50%,-50%);
+      position:absolute;
+    
+
+      z-index:100000;
+      cursor:pointer;
+  }
+
+
+
+/******************************************************************************************
+******************************************************************************************
+CLOCK
+******************************************************************************************
+*******************************************************************************************/
+
+
+.clockdate-wrapper {
+    font-family: 'Handlee', cursive;
+    background: rgba(163, 163, 163, 0.497);
+    padding:25px;
+    max-width:500px;
+    width:100%;
+    text-align:center;
+    border-radius:5px;
+    margin:0 auto;
+
+}
+#clock{
+    font-family: 'Handlee', cursive;
+    font-size:75px;
+    text-shadow:0px 0px 1px #fff;
+    color:#fff;
+}
+#clock span {
+    color: #fff;
+    /*text-shadow:0px 0px 1px #333;*/
+    font-size:60px;
+    position:relative;
+    top:-5px;
+    left:10px;
+}
+#date {
+    letter-spacing:3px;
+    font-size:20px;
+    font-family: 'Handlee', cursive;
+    color:#fff;
+}
+
+
+/******************************************************************************************
+******************************************************************************************
+TO DO LIST 
+******************************************************************************************
+*******************************************************************************************/
+
+
+
+
+*:focus{outline:none !important;}
+
+#todoapp {
+    cursor: none;
+	background: rgba(163, 163, 163, 0.497);
+	margin-bottom: 40px;
+	margin:0px auto;
+	width: 300px;
+
+}
+
+#todoapp h2 {
+	cursor: none;
+	font-weight: bold;
+	background-color: rgba(163, 163, 163, 0.497);
+	border-bottom:1px solid rgba(0, 0, 0, 0.593);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color:#fff;
+	font-family: 'Dosis', cursive;
+	font-size:16px;
+	font-weight: 100;
+	line-height: 56px;
+	padding-left: 15px;
+	margin:0;
+}
+
+
+
+#todoapp ul, #todoapp li {
+    cursor: none;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#todoapp li {
+    cursor: none;
+	background-color: rgba(239, 239, 239, 0.212);
+	border-bottom:1px rgba(0, 0, 0, 0.593);
+	color: rgb(90, 90, 90);
+
+}
+
+#todoapp li span{
+    cursor: none;
+	margin-left:30px;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;	
+}
+
+#todoapp label{
+    cursor: none;
+	cursor:pointer;
+	display:block;
+	line-height: 56px;
+	padding: 0 15px; 
+	position: relative;
+
+}
+
+#todoapp li:hover {
+    cursor: none;
+	background-color: rgba(84, 84, 84, 0.548);
+	color:#ffffff;
+
+}
+
+#todoapp input[type="text"] {
+    cursor: none;
+	background-color: rgba(58, 58, 58, 0.564);
+	border-top:1px solid rgba(0, 0, 0, 0.593);;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	color: #ffffff;
+	font-size:14px;
+	margin:0;
+	padding:20px 15px;
+	width:270px;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+	font-family: 'Dosis', cursive;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+	
+}
+
+#todoapp input[type="text"]:hover{
+	color:#fff;
+}
+
+#todoapp input[type="text"]:focus{
+	color:#fff;
+}
+
+#todoapp ::-webkit-input-placeholder {color: #ffffff;} /* WebKit browsers */
+
+
+#main {
+	display: none;
+}
+
+#todo-list {
+    cursor: none;
+	padding: 0;
+	list-style: none;
+	overflow-x: hidden;
+	overflow-y:scroll;
+	max-height:227px;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+#todo-list::-webkit-scrollbar-track-piece {
+	
+    background-color: rgba(58, 58, 58, 0.564);
+    
+}
+
+#todo-list::-webkit-scrollbar-thumb:vertical {
+    cursor: none;
+    height: 6px;
+    background-color: #666;
+    -webkit-border-radius: 6px;
+}
+
+#todo-list::-webkit-scrollbar-thumb:horizontal {
+    cursor: none;
+    width: 6px;
+    background-color: #666;
+    -webkit-border-radius: 6px;
+}
+
+#todo-list li {
+    cursor: none;
+    font-family: 'Dosis', cursive;
+	position: relative;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#todo-list li:last-child {
+	border-bottom: none;
+}
+
+#todo-list  input.toggle[type="checkbox"]{
+	cursor: none;
+	opacity: 0;
+	position: absolute;
+}
+
+#todo-list input.toggle[type="checkbox"] + i {
+    cursor: none;
+	background-color: rgb(107, 163, 107);
+	border-radius: 50%;
+	display: block;
+	height: 16px;
+	position: absolute;
+	top:20px;
+	width: 16px;	
+	z-index: 1;
+}
+.destroy {
+    cursor: none;
+	vertical-align: middle;
+	background-color:#a7535e;
+	border-radius:50%;
+	color:rgba(255, 255, 255, 0);
+	display:none;
+	float:right;
+	font-weight: bold;
+	line-height: normal;
+	height:17px;
+	text-align: center;
+	text-decoration: none;
+	width:17px;
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	cursor: pointer;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+
+}
+
+#todo-list  input.toggle[type="checkbox"]:checked + i::after{
+    cursor: none;
+	background-color: #ecffe4;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	height:8px;
+	left:4px;
+	position: absolute;
+	top:4px;
+	width:8px;	
+	z-index: 2;
+}
+
+#todo-list li.done label {
+    cursor: none;
+	color: #000000;
+	text-decoration: line-through;
+}
+
+
+
+#todo-list li:hover .destroy {
+  	display: block;
+	
+}
+
+#todo-list .destroy:hover {
+    cursor: none;
+  background-position: 0 -20px;
+  background-color:#fff;
+  color:#de3f53;
+  font-weight:bold;
+}
+
+#todo-list li.editing {
+    cursor: none;
+	border-bottom: none;
+	margin-top: -1px;
+	padding: 0;
+	border-right: 1px solid black;
+}
+
+#todo-list li.editing:last-child {
+	margin-bottom: -1px;
+}
+
+#todo-list li.editing .edit {
+    cursor: none;
+	display: block;
+	width:263px;
+	border-bottom:1px solid black;
+	border-top:1px solid black;
+	border-left:none;
+	border-right:none;
+	padding: 20px 15px 21px 15px;
+	margin: 0;
+	-webkit-border-radius: 0 0 0px 0px;
+	-moz-border-radius: 0 0 0px 0px;
+	-ms-border-radius: 0 0 0px 0px;
+	-o-border-radius: 0 0 0px 0px;
+	border-radius: 0 0 0px 0px;
+	
+}
+
+#todo-list li.editing .view {
+	display: none;
+}
+
+#todo-list li .view label {
+	word-break: break-word;
+}
+
+#todo-list li .edit {
+	display: none;
+}
+
+
+
+#todoapp footer {
+    cursor: none;
+    font-family: 'Dosis', cursive;
+	display: none;
+	position:relative;
+	top:-5px;
+	overflow: hidden;
+	color: #ffffff;
+	background: #292929;
+	line-height: 30px;
+	padding-left:10px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+#clear-completed {
+    cursor: none;
+    font-family: 'Dosis', cursive;
+	float: right;
+	line-height: 20px;
+	text-decoration: none;
+	background: rgba(214, 214, 214, 0.294);
+	color: #ffffff;
+	font-size: 11px;
+	margin-top: 6px;
+
+	margin-right: 4px;
+	padding: 0 10px 0px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	border-radius: 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+    transition: 0.3s;
+
+}
+
+#clear-completed:hover {
+	background: rgb(255, 255, 255);
+    color: rgb(56, 56, 56);
+    transition: 0.3s;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+}
+
+#clear-completed:active {
+	position: relative;
+	top: 1px;
+}
+
+#todo-count span {
+	font-weight: bold;
+}
+
+
+#dragme{
+height:20px;
+width:300px;
+display:block;
+cursor:pointer;
+position:absolute;
+top:40%;
+/*bottom: 50%;*/
+left:3%;
+cursor: none;
+}
