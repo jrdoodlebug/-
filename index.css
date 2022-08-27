@@ -265,7 +265,7 @@ TO DO LIST
 	color:#ffffff;
     transition: 0.2s;
     /*font-size: 110%;*/
-    letter-spacing: 0.3em;
+    letter-spacing: 0.175em;
 }
 
 #todoapp input[type="text"] {
